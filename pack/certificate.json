@@ -1,0 +1,271 @@
+{
+  "pack": "northstar_retail",
+  "misata_version": "0.8.1.28",
+  "seed": 20260710,
+  "spec_sha256": "917f71cc42418acaf47132bcdbf04ad694095dee3109455c798f2ae03439240c",
+  "generated_at": "2026-07-10T09:50:08.079554+00:00",
+  "verifier": {
+    "engine": "duckdb",
+    "version": "1.4.2"
+  },
+  "fk_integrity": [
+    {
+      "relationship": "orders.customer_id -> customers.customer_id",
+      "orphans": 0,
+      "verified": true
+    },
+    {
+      "relationship": "orders.product_id -> products.product_id",
+      "orphans": 0,
+      "verified": true
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-01-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-02-01 00:00:00'",
+      "expected": 410000.0,
+      "observed": 410000.0,
+      "match": true
+    },
+    {
+      "id": "q002",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-02-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-03-01 00:00:00'",
+      "expected": 397500.0,
+      "observed": 397500.0,
+      "match": true
+    },
+    {
+      "id": "q003",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-03-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-04-01 00:00:00'",
+      "expected": 385000.0,
+      "observed": 385000.0,
+      "match": true
+    },
+    {
+      "id": "q004",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-04-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-05-01 00:00:00'",
+      "expected": 427333.33,
+      "observed": 427333.33,
+      "match": true
+    },
+    {
+      "id": "q005",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-05-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-06-01 00:00:00'",
+      "expected": 469666.67,
+      "observed": 469666.67,
+      "match": true
+    },
+    {
+      "id": "q006",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-06-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-07-01 00:00:00'",
+      "expected": 512000.0,
+      "observed": 512000.0,
+      "match": true
+    },
+    {
+      "id": "q007",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-07-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-08-01 00:00:00'",
+      "expected": 497333.33,
+      "observed": 497333.33,
+      "match": true
+    },
+    {
+      "id": "q008",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-08-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-09-01 00:00:00'",
+      "expected": 482666.67,
+      "observed": 482666.67,
+      "match": true
+    },
+    {
+      "id": "q009",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-09-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-10-01 00:00:00'",
+      "expected": 468000.0,
+      "observed": 468000.0,
+      "match": true
+    },
+    {
+      "id": "q010",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-10-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-11-01 00:00:00'",
+      "expected": 609000.0,
+      "observed": 609000.0,
+      "match": true
+    },
+    {
+      "id": "q011",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-11-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-12-01 00:00:00'",
+      "expected": 750000.0,
+      "observed": 750000.0,
+      "match": true
+    },
+    {
+      "id": "q012",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-12-01 00:00:00' AND \"order_date\" < TIMESTAMP '2026-01-01 00:00:00'",
+      "expected": 905000.0,
+      "observed": 905000.0,
+      "match": true
+    },
+    {
+      "id": "q013",
+      "gold_sql": "SELECT ROUND(SUM(\"amount\"), 2) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-01-01 00:00:00' AND \"order_date\" < TIMESTAMP '2026-01-01 00:00:00'",
+      "expected": 6313500.0,
+      "observed": 6313500.0,
+      "match": true
+    },
+    {
+      "id": "q014",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-01-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-02-01 00:00:00'",
+      "expected": 4824,
+      "observed": 4824,
+      "match": true
+    },
+    {
+      "id": "q015",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-02-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-03-01 00:00:00'",
+      "expected": 4676,
+      "observed": 4676,
+      "match": true
+    },
+    {
+      "id": "q016",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-03-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-04-01 00:00:00'",
+      "expected": 4529,
+      "observed": 4529,
+      "match": true
+    },
+    {
+      "id": "q017",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-04-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-05-01 00:00:00'",
+      "expected": 5027,
+      "observed": 5027,
+      "match": true
+    },
+    {
+      "id": "q018",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-05-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-06-01 00:00:00'",
+      "expected": 5525,
+      "observed": 5525,
+      "match": true
+    },
+    {
+      "id": "q019",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-06-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-07-01 00:00:00'",
+      "expected": 6024,
+      "observed": 6024,
+      "match": true
+    },
+    {
+      "id": "q020",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-07-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-08-01 00:00:00'",
+      "expected": 5851,
+      "observed": 5851,
+      "match": true
+    },
+    {
+      "id": "q021",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-08-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-09-01 00:00:00'",
+      "expected": 5678,
+      "observed": 5678,
+      "match": true
+    },
+    {
+      "id": "q022",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-09-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-10-01 00:00:00'",
+      "expected": 5506,
+      "observed": 5506,
+      "match": true
+    },
+    {
+      "id": "q023",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-10-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-11-01 00:00:00'",
+      "expected": 7165,
+      "observed": 7165,
+      "match": true
+    },
+    {
+      "id": "q024",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-11-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-12-01 00:00:00'",
+      "expected": 8824,
+      "observed": 8824,
+      "match": true
+    },
+    {
+      "id": "q025",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-12-01 00:00:00' AND \"order_date\" < TIMESTAMP '2026-01-01 00:00:00'",
+      "expected": 10000,
+      "observed": 10000,
+      "match": true
+    },
+    {
+      "id": "q026",
+      "gold_sql": "SELECT strftime(date_trunc('month', \"order_date\"), '%Y-%m') AS period FROM \"orders\" GROUP BY 1 ORDER BY SUM(\"amount\") DESC, 1 ASC LIMIT 1",
+      "expected": "2025-12",
+      "observed": "2025-12",
+      "match": true
+    },
+    {
+      "id": "q028",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-02-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-03-01 00:00:00'",
+      "expected": 0.0214,
+      "observed": 0.0214,
+      "match": true
+    },
+    {
+      "id": "q029",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-03-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-04-01 00:00:00'",
+      "expected": 0.0227,
+      "observed": 0.0227,
+      "match": true
+    },
+    {
+      "id": "q030",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-04-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-05-01 00:00:00'",
+      "expected": 0.0241,
+      "observed": 0.0241,
+      "match": true
+    },
+    {
+      "id": "q031",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-05-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-06-01 00:00:00'",
+      "expected": 0.0255,
+      "observed": 0.0255,
+      "match": true
+    },
+    {
+      "id": "q033",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-07-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-08-01 00:00:00'",
+      "expected": 0.0282,
+      "observed": 0.0282,
+      "match": true
+    },
+    {
+      "id": "q035",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-09-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-10-01 00:00:00'",
+      "expected": 0.0309,
+      "observed": 0.0309,
+      "match": true
+    },
+    {
+      "id": "q038",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-12-01 00:00:00' AND \"order_date\" < TIMESTAMP '2026-01-01 00:00:00'",
+      "expected": 0.035,
+      "observed": 0.035,
+      "match": true
+    },
+    {
+      "id": "q039",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" c LEFT JOIN \"customers\" p ON c.\"customer_id\" = p.\"customer_id\" WHERE p.\"customer_id\" IS NULL AND c.\"customer_id\" IS NOT NULL",
+      "expected": 0,
+      "observed": 0,
+      "match": true
+    },
+    {
+      "id": "q040",
+      "gold_sql": "SELECT COUNT(*) FROM \"orders\" c LEFT JOIN \"products\" p ON c.\"product_id\" = p.\"product_id\" WHERE p.\"product_id\" IS NULL AND c.\"product_id\" IS NOT NULL",
+      "expected": 0,
+      "observed": 0,
+      "match": true
+    }
+  ],
+  "all_match": true
+}

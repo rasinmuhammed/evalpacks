@@ -1,0 +1,466 @@
+{
+  "pack": "northstar_retail",
+  "misata_version": "0.8.1.28",
+  "seed": 20260710,
+  "spec_sha256": "917f71cc42418acaf47132bcdbf04ad694095dee3109455c798f2ae03439240c",
+  "tables": {
+    "customers": 2000,
+    "products": 300,
+    "orders": 73629
+  },
+  "questions_shipped": 35,
+  "questions_dropped": 5,
+  "dropped_questions": [
+    {
+      "id": "q027",
+      "question": "In the orders table, what fraction of rows during January 2025 (rows whose timestamp is on or after 2025-01-01 and strictly before 2025-02-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-01-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-02-01 00:00:00'",
+      "expected_answer": 0.02,
+      "answer_type": "number",
+      "tags": [
+        "rate",
+        "temporal_window",
+        "single_table"
+      ],
+      "source": {
+        "kind": "rate_curve_anchor",
+        "table": "orders",
+        "column": "is_fraud",
+        "period": "2025-01"
+      },
+      "round_decimals": 4,
+      "drop_reason": "verification_mismatch",
+      "observed": 0.0199
+    },
+    {
+      "id": "q032",
+      "question": "In the orders table, what fraction of rows during June 2025 (rows whose timestamp is on or after 2025-06-01 and strictly before 2025-07-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-06-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-07-01 00:00:00'",
+      "expected_answer": 0.0268,
+      "answer_type": "number",
+      "tags": [
+        "rate",
+        "temporal_window",
+        "single_table"
+      ],
+      "source": {
+        "kind": "rate_curve_anchor",
+        "table": "orders",
+        "column": "is_fraud",
+        "period": "2025-06"
+      },
+      "round_decimals": 4,
+      "drop_reason": "verification_mismatch",
+      "observed": 0.0269
+    },
+    {
+      "id": "q034",
+      "question": "In the orders table, what fraction of rows during August 2025 (rows whose timestamp is on or after 2025-08-01 and strictly before 2025-09-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-08-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-09-01 00:00:00'",
+      "expected_answer": 0.0295,
+      "answer_type": "number",
+      "tags": [
+        "rate",
+        "temporal_window",
+        "single_table"
+      ],
+      "source": {
+        "kind": "rate_curve_anchor",
+        "table": "orders",
+        "column": "is_fraud",
+        "period": "2025-08"
+      },
+      "round_decimals": 4,
+      "drop_reason": "verification_mismatch",
+      "observed": 0.0296
+    },
+    {
+      "id": "q036",
+      "question": "In the orders table, what fraction of rows during October 2025 (rows whose timestamp is on or after 2025-10-01 and strictly before 2025-11-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-10-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-11-01 00:00:00'",
+      "expected_answer": 0.0323,
+      "answer_type": "number",
+      "tags": [
+        "rate",
+        "temporal_window",
+        "single_table"
+      ],
+      "source": {
+        "kind": "rate_curve_anchor",
+        "table": "orders",
+        "column": "is_fraud",
+        "period": "2025-10"
+      },
+      "round_decimals": 4,
+      "drop_reason": "verification_mismatch",
+      "observed": 0.0322
+    },
+    {
+      "id": "q037",
+      "question": "In the orders table, what fraction of rows during November 2025 (rows whose timestamp is on or after 2025-11-01 and strictly before 2025-12-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "gold_sql": "SELECT ROUND(AVG(CASE WHEN \"is_fraud\" = TRUE THEN 1.0 ELSE 0.0 END), 4) FROM \"orders\" WHERE \"order_date\" >= TIMESTAMP '2025-11-01 00:00:00' AND \"order_date\" < TIMESTAMP '2025-12-01 00:00:00'",
+      "expected_answer": 0.0336,
+      "answer_type": "number",
+      "tags": [
+        "rate",
+        "temporal_window",
+        "single_table"
+      ],
+      "source": {
+        "kind": "rate_curve_anchor",
+        "table": "orders",
+        "column": "is_fraud",
+        "period": "2025-11"
+      },
+      "round_decimals": 4,
+      "drop_reason": "verification_mismatch",
+      "observed": 0.0337
+    }
+  ],
+  "schema": {
+    "name": "northstar_retail",
+    "description": "A mid-size e-commerce retailer, calendar year 2025. Every number a grader needs was declared before a single row was generated.",
+    "domain": null,
+    "tables": [
+      {
+        "name": "customers",
+        "row_count": 2000,
+        "description": null,
+        "is_reference": false,
+        "inline_data": null,
+        "columns": [],
+        "constraints": [],
+        "workflow_preset": null,
+        "workflow_config": null,
+        "correlations": [],
+        "state_machine": null,
+        "cluster_effect": null
+      },
+      {
+        "name": "products",
+        "row_count": 300,
+        "description": null,
+        "is_reference": false,
+        "inline_data": null,
+        "columns": [],
+        "constraints": [],
+        "workflow_preset": null,
+        "workflow_config": null,
+        "correlations": [],
+        "state_machine": null,
+        "cluster_effect": null
+      },
+      {
+        "name": "orders",
+        "row_count": 60000,
+        "description": null,
+        "is_reference": false,
+        "inline_data": null,
+        "columns": [],
+        "constraints": [],
+        "workflow_preset": null,
+        "workflow_config": null,
+        "correlations": [],
+        "state_machine": null,
+        "cluster_effect": null
+      }
+    ],
+    "columns": {
+      "customers": [
+        {
+          "name": "customer_id",
+          "type": "int",
+          "distribution_params": {
+            "min": 1,
+            "max": 100000,
+            "distribution": "normal",
+            "_distribution_is_default": true
+          },
+          "nullable": false,
+          "unique": true,
+          "description": null
+        },
+        {
+          "name": "full_name",
+          "type": "text",
+          "distribution_params": {
+            "text_type": "name"
+          },
+          "nullable": false,
+          "unique": false,
+          "description": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "distribution_params": {},
+          "nullable": false,
+          "unique": false,
+          "description": null
+        },
+        {
+          "name": "signup_date",
+          "type": "date",
+          "distribution_params": {
+            "start": "2023-01-01",
+            "end": "2025-12-31"
+          },
+          "nullable": false,
+          "unique": false,
+          "description": null
+        }
+      ],
+      "products": [
+        {
+          "name": "product_id",
+          "type": "int",
+          "distribution_params": {
+            "min": 1,
+            "max": 10000,
+            "distribution": "normal",
+            "_distribution_is_default": true
+          },
+          "nullable": false,
+          "unique": true,
+          "description": null
+        },
+        {
+          "name": "product_name",
+          "type": "text",
+          "distribution_params": {},
+          "nullable": false,
+          "unique": false,
+          "description": null
+        },
+        {
+          "name": "unit_price",
+          "type": "float",
+          "distribution_params": {
+            "min": 3,
+            "max": 150,
+            "decimals": 2,
+            "distribution": "normal",
+            "_distribution_is_default": true
+          },
+          "nullable": false,
+          "unique": false,
+          "description": null
+        }
+      ],
+      "orders": [
+        {
+          "name": "order_id",
+          "type": "int",
+          "distribution_params": {
+            "min": 1,
+            "max": 10000000,
+            "distribution": "normal",
+            "_distribution_is_default": true
+          },
+          "nullable": false,
+          "unique": true,
+          "description": null
+        },
+        {
+          "name": "customer_id",
+          "type": "foreign_key",
+          "distribution_params": {},
+          "nullable": false,
+          "unique": false,
+          "description": null
+        },
+        {
+          "name": "product_id",
+          "type": "foreign_key",
+          "distribution_params": {},
+          "nullable": false,
+          "unique": false,
+          "description": null
+        },
+        {
+          "name": "amount",
+          "type": "float",
+          "distribution_params": {
+            "min": 3,
+            "max": 5000,
+            "distribution": "normal",
+            "_distribution_is_default": true
+          },
+          "nullable": false,
+          "unique": false,
+          "description": null
+        },
+        {
+          "name": "is_fraud",
+          "type": "boolean",
+          "distribution_params": {},
+          "nullable": false,
+          "unique": false,
+          "description": null
+        },
+        {
+          "name": "order_date",
+          "type": "datetime",
+          "distribution_params": {
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          },
+          "nullable": false,
+          "unique": false,
+          "description": null
+        }
+      ]
+    },
+    "relationships": [
+      {
+        "parent_table": "customers",
+        "child_table": "orders",
+        "parent_key": "customer_id",
+        "child_key": "customer_id",
+        "temporal_constraint": false,
+        "filters": null
+      },
+      {
+        "parent_table": "products",
+        "child_table": "orders",
+        "parent_key": "product_id",
+        "child_key": "product_id",
+        "temporal_constraint": false,
+        "filters": null
+      }
+    ],
+    "events": [],
+    "outcome_curves": [
+      {
+        "table": "orders",
+        "column": "amount",
+        "time_column": "order_date",
+        "time_unit": "month",
+        "pattern_type": "growth",
+        "intra_period_pattern": "uniform",
+        "value_mode": "absolute",
+        "description": null,
+        "avg_transaction_value": 85.0,
+        "min_transactions_per_period": 1,
+        "max_transactions_per_period": 10000,
+        "concentration": 2.0,
+        "start_date": null,
+        "curve_points": [
+          {
+            "month": 1,
+            "target_value": 410000.0
+          },
+          {
+            "month": 2,
+            "target_value": 397500.0
+          },
+          {
+            "month": 3,
+            "target_value": 385000.0
+          },
+          {
+            "month": 4,
+            "target_value": 427333.33
+          },
+          {
+            "month": 5,
+            "target_value": 469666.67
+          },
+          {
+            "month": 6,
+            "target_value": 512000.0
+          },
+          {
+            "month": 7,
+            "target_value": 497333.33
+          },
+          {
+            "month": 8,
+            "target_value": 482666.67
+          },
+          {
+            "month": 9,
+            "target_value": 468000.0
+          },
+          {
+            "month": 10,
+            "target_value": 609000.0
+          },
+          {
+            "month": 11,
+            "target_value": 750000.0
+          },
+          {
+            "month": 12,
+            "target_value": 905000.0
+          }
+        ]
+      }
+    ],
+    "rate_curves": [
+      {
+        "table": "orders",
+        "column": "is_fraud",
+        "time_column": "order_date",
+        "time_unit": "month",
+        "true_value": true,
+        "interpolate": true,
+        "description": null,
+        "rate_points": [
+          {
+            "period": "01",
+            "rate": 0.02
+          },
+          {
+            "period": "02",
+            "rate": 0.021364
+          },
+          {
+            "period": "03",
+            "rate": 0.022727
+          },
+          {
+            "period": "04",
+            "rate": 0.024091
+          },
+          {
+            "period": "05",
+            "rate": 0.025455
+          },
+          {
+            "period": "06",
+            "rate": 0.026818
+          },
+          {
+            "period": "07",
+            "rate": 0.028182
+          },
+          {
+            "period": "08",
+            "rate": 0.029545
+          },
+          {
+            "period": "09",
+            "rate": 0.030909
+          },
+          {
+            "period": "10",
+            "rate": 0.032273
+          },
+          {
+            "period": "11",
+            "rate": 0.033636
+          },
+          {
+            "period": "12",
+            "rate": 0.035
+          }
+        ]
+      }
+    ],
+    "noise_config": null,
+    "realism": null,
+    "seed": 20260710,
+    "vocabularies": null
+  }
+}

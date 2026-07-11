@@ -1,0 +1,433 @@
+{
+  "summary": {
+    "model": "llama-3.3-70b-versatile",
+    "source": "bird_items.jsonl",
+    "n": 60,
+    "mean_f1": 0.08,
+    "median_f1": 0.069,
+    "p90_f1": 0.151,
+    "verbatim_start_rate": 0.0
+  },
+  "rows": [
+    {
+      "prefix": "What is the ratio of customers who pay in",
+      "true_suffix": "EUR against customers who pay in CZK?",
+      "continuation": "cash to customers who pay in credit in the store? To answer this question, we need to know the number of customers who pay in cash and the number of customers who pay in credit. Let's assume that we have the following data: \n\nNumber of customers who pay in cash = 250",
+      "overlap_f1": 0.136,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What was the average monthly consumption of customers",
+      "true_suffix": "in SME for the year 2013?",
+      "continuation": "I don't have any information to continue from, as this is the beginning of our conversation. If you provide more context or information, I'll be happy to help.",
+      "overlap_f1": 0.056,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What was the difference in gas consumption between CZK-paying",
+      "true_suffix": "customers and EUR-paying customers in 2012?",
+      "continuation": "and EUR-paying customers, and how did this impact the overall profitability of the gas station? To answer this question, we need to examine the pricing strategy employed by the gas station and its effects on customer behavior.",
+      "overlap_f1": 0.178,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How much did customer 6 consume in",
+      "true_suffix": "total between August and November 2013?",
+      "continuation": "total? To determine this, we would need to know the specific details about customer 6's consumption, such as the amount of a particular product or service they used. Without this information, it's impossible to provide an accurate answer. If you have more context or details about customer 6 and what",
+      "overlap_f1": 0.069,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many more \"discount\" gas stations does the",
+      "true_suffix": "Czech Republic have compared to Slovakia?",
+      "continuation": "area need, it seems like every other corner has one, and they all seem to have the same prices, is it really a discount if everyone is charging the same amount, or are they just calling it a discount to make you feel better about paying a higher price than you would have a few years",
+      "overlap_f1": 0.065,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Is it true that more SMEs pay in Czech koruna",
+      "true_suffix": "than in euros? If so, how many more?",
+      "continuation": "than in euros, despite the country being a member of the European Union? Yes, that's correct. Although the Czech Republic is a member of the European Union, it has not adopted the euro as its official currency and still uses the Czech koruna (CZK). As a result, many",
+      "overlap_f1": 0.14,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the customers who paid in euro, how many of",
+      "true_suffix": "them have a monthly consumption of over 1000?",
+      "continuation": "them paid with a 50 euro bill, how many paid with a 20 euro bill, and how many paid with a 10 euro bill?",
+      "overlap_f1": 0.125,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the transactions made in the gas stations in the Czech Republic,",
+      "true_suffix": "how many of them are taken place after 2012/1/1?",
+      "continuation": "there are various types of payments, including cash, credit cards, and mobile payments, with the majority of customers still preferring to pay in cash, although the use of contactless payments has been increasing in recent years, especially among younger generations and in larger cities such as Prague.",
+      "overlap_f1": 0.069,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "For all the transactions happened during 8:00-9:00 in",
+      "true_suffix": "2012/8/26, how many happened in CZE?",
+      "continuation": "New York, the system will automatically generate a report that includes the transaction ID, user ID, transaction amount, and the time of the transaction. The report will be sent to the administrator's email address for review and analysis. The system will also flag any suspicious transactions that occurred during this time period,",
+      "overlap_f1": 0.0,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the percentage of the customers",
+      "true_suffix": "who used EUR in 2012/8/25?",
+      "continuation": "who are satisfied with the product or service being offered. This can be determined through surveys, reviews, and other forms of customer feedback. The percentage of satisfied customers can be calculated by dividing the number of satisfied customers by the total number of customers and multiplying by 100. For example, if 80",
+      "overlap_f1": 0.034,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the percentage of \"premium\" against the",
+      "true_suffix": "overall segment in Country = \"SVK\"?",
+      "continuation": "total cost of the policy. This can vary depending on several factors, including the type of policy, the provider, and the level of coverage chosen. Generally, the premium for a life insurance policy can range from a few percent to over 10% of the total cost of the policy. For example",
+      "overlap_f1": 0.0,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the students from the Student_Club who attended the event \"Women's Soccer\", how",
+      "true_suffix": "many of them want a T-shirt that's in medium size?",
+      "continuation": "many participated in the \"Debate_Competition\" event as well, and what percentage of the total number of students from the Student_Club who attended the \"Women's Soccer\" event did they represent?",
+      "overlap_f1": 0.182,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the amount of the funds",
+      "true_suffix": "that the Vice President received?",
+      "continuation": "I don't have any information to continue. It seems like this conversation just started. If you provide more context or the original source, I'll be happy to help.",
+      "overlap_f1": 0.057,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Calculate the total average cost that Elijah Allen spent",
+      "true_suffix": "in the events on September and October.",
+      "continuation": "to go to the movies. Elijah spent $15 on tickets and $8 on snacks for a total of $23 for the first movie. For the second movie, he spent $15 on tickets and $10 on snacks for a total of $25. To find the average cost, we need to",
+      "overlap_f1": 0.107,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Calculate the difference of the total amount spent in all events",
+      "true_suffix": "by the Student_Club in year 2019 and 2020.",
+      "continuation": "to determine the difference, we need to know the total amount spent in each event. however, since the specific amounts spent in each event are not provided, let's assume hypothetical amounts for illustration purposes.\n\nsuppose there are three events: a, b, and c, with total amounts spent being $",
+      "overlap_f1": 0.103,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "For all the club members from \"Business\" major, how",
+      "true_suffix": "many of them wear medium size t-shirt?",
+      "continuation": "many of them are also members of the \"Sports\" club? To answer this, we need to look at the intersection of the two sets: Business \u2229 Sports. From the given information, we can see that there are 5 members who are part of both the \"Business\" and \"Sports",
+      "overlap_f1": 0.109,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many times was the budget in Advertisement for",
+      "true_suffix": "\"Yearly Kickoff\" meeting more than \"October Meeting\"?",
+      "continuation": "the fiscal year 2020 increased, and what were the specific allocations for each category of advertisement expenditure, including but not limited to print media, digital media, and broadcast media, and were there any notable trends or shifts in the allocation of advertisement budget across different categories and platforms, and if so,",
+      "overlap_f1": 0.0,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the total cost of the",
+      "true_suffix": "pizzas for all the events?",
+      "continuation": "project, and how will it be funded? The total cost of the project is estimated to be around $10 million, which will be funded through a combination of government grants, private investments, and crowdfunding campaigns. The government has agreed to provide a significant portion of the funding, with the remaining amount to",
+      "overlap_f1": 0.035,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Based on the total cost for all event, what is",
+      "true_suffix": "the percentage of cost for Yearly Kickoff event?",
+      "continuation": "the budget allocation for each event, and how will it be managed to ensure that the total cost does not exceed the allocated amount? To determine this, it's essential to break down the total cost into specific categories, such as venue rental, catering, entertainment, and decorations, and then allocate a budget",
+      "overlap_f1": 0.133,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the members with t-shirt size of medium, what is the percentage",
+      "true_suffix": "of the amount 50 received by the Student_Club?",
+      "continuation": "of males and females? To calculate this, we need to know the total number of members with a medium t-shirt size, as well as the number of males and females within this group. Let's assume we have the following data:\n\n- Total members with medium t-shirt size: 100\n-",
+      "overlap_f1": 0.102,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Are there more in-patient or outpatient who were male?",
+      "true_suffix": "What is the deviation in percentage?",
+      "continuation": "There is no data provided to answer this question. However, according to various studies, the distribution of in-patient and out-patient populations by gender can vary depending on the specific medical condition, age group, and other factors.\n\nIn general, some studies suggest that males are more likely to be hospitalized",
+      "overlap_f1": 0.105,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the ratio of outpatient to inpatient followed up",
+      "true_suffix": "treatment among all the 'SLE' diagnosed patient?",
+      "continuation": "by the hospital's department of surgery? This question requires a numerical answer and is asking for a specific piece of data that can be used to evaluate the hospital's performance and efficiency in terms of patient care and follow-up. To answer this question, one would need access to the hospital's records and data",
+      "overlap_f1": 0.062,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many female patients who came at the hospital in",
+      "true_suffix": "1997 was immediately followed at the outpatient clinic?",
+      "continuation": "the morning were diagnosed with high blood pressure?",
+      "overlap_f1": 0.125,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many of the patients with the most serious",
+      "true_suffix": "thrombosis cases examined in 1997 are women?",
+      "continuation": "injuries were able to recover, and what were the most common complications that arose during their treatment. The study also examined the long-term effects of the injuries on the patients' quality of life, including their ability to return to work and engage in everyday activities. Additionally, the researchers investigated the impact of",
+      "overlap_f1": 0.067,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the ratio of male to female patients among",
+      "true_suffix": "all those with abnormal uric acid counts?",
+      "continuation": "those diagnosed with the disease. According to the data, the male to female ratio is approximately 2:1, indicating that men are twice as likely to be diagnosed with the condition as women. This disparity may be due to a variety of factors, including differences in lifestyle, genetics, and access to",
+      "overlap_f1": 0.069,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many underage patients were examined during the course of",
+      "true_suffix": "the three-year period from 1990 to 1993?",
+      "continuation": "the study, and were the results of these examinations consistent with the expected outcomes based on the patients' ages and medical histories?",
+      "overlap_f1": 0.067,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "For the patient who was born on 1959/2/18, what is the decrease rate",
+      "true_suffix": "for his/her total cholesterol from November to December in 1981?",
+      "continuation": "of the patient's physical condition or a specific measurement is not provided, so I'll need more context to give a precise answer. However, if we're discussing a decrease rate in a general sense, such as the decrease in a physical attribute or health metric over time, we would typically follow these steps",
+      "overlap_f1": 0.061,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What number of patients with a degree of thrombosis level 2 and ANA pattern of only S,",
+      "true_suffix": "have a level of anti-Cardiolip in antibody (IgM) 20% higher than average?",
+      "continuation": "is not specified in the provided text as there is no text to continue from. If you could provide the original source or more context, I'd be happy to help.",
+      "overlap_f1": 0.045,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the average blood albumin level for female patients with a PLT",
+      "true_suffix": "greater than 400 who have been diagnosed with SLE?",
+      "continuation": "I can't provide a specific answer without more context. Platelet (PLT) count and blood albumin levels can vary widely among individuals and are influenced by numerous factors, including the patient's overall health, the presence of any underlying medical conditions, and the laboratory methods used for testing. \n\nGenerally",
+      "overlap_f1": 0.0,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What percentage of patients who were born in 1980",
+      "true_suffix": "and were diagnosed with RA are women?",
+      "continuation": "or later have been diagnosed with the disease. This information can be used to identify trends and patterns in the data, and to inform decisions about treatment and prevention strategies. Additionally, the data can be used to identify high-risk groups and to develop targeted interventions to reduce the incidence of the disease. For example",
+      "overlap_f1": 0.097,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the average age of the",
+      "true_suffix": "male patient with high cholesterol?",
+      "continuation": "population in the country, and how does it affect the overall demographics and social security systems in place. The average age can vary significantly from one country to another, with some nations having a relatively young population and others having a more aged one. Factors such as birth rates, life expectancy, and migration patterns",
+      "overlap_f1": 0.034,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "For all patients with triglyceride (TG) level beyond the normal range,",
+      "true_suffix": "how many are age more than 50 years?",
+      "continuation": "fibrates are the preferred pharmacological treatment option, as they have been shown to significantly reduce TG levels and decrease the risk of cardiovascular events. Additionally, omega-3 fatty acids, particularly EPA and DHA, have been found to have a beneficial effect on TG levels, and may be considered as",
+      "overlap_f1": 0.035,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "For patient born between 1936-1956, how many male patients",
+      "true_suffix": "have creatinine phosphokinase beyond the normal range?",
+      "continuation": "It seems like you forgot to include the rest of the text. Please provide the original source, and I'll be happy to continue it for you.",
+      "overlap_f1": 0.059,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "For patients with abnormal platelet level, state the number of patients with lower than normal range. How is",
+      "true_suffix": "it compare to the number of patients with higher than normal range?",
+      "continuation": "the number of patients with lower than normal range determined? To answer this, we need to understand what constitutes a normal platelet range and how it is measured. A normal platelet count typically ranges from 150,000 to 450,000 platelets per microliter (\u00b5L) of",
+      "overlap_f1": 0.351,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "For all patients who are older than 55 years old, what is the",
+      "true_suffix": "percentage of female who has abnormal prothrombin time (PT)?",
+      "continuation": "recommended course of action or treatment, it's essential to consider their unique needs and health status. Older adults often have multiple chronic conditions, such as hypertension, diabetes, or arthritis, which can impact their overall health and treatment outcomes. Additionally, age-related changes in physiology, such as decreased renal function or",
+      "overlap_f1": 0.033,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the male patients who have a normal level of white blood cells,",
+      "true_suffix": "how many of them have an abnormal fibrinogen level?",
+      "continuation": "there is a significant correlation between the level of red blood cells and the level of hemoglobin, with a p-value of 0.01, indicating that patients with higher levels of red blood cells tend to have higher levels of hemoglobin. Furthermore, the analysis reveals that the mean platelet count is",
+      "overlap_f1": 0.1,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the patients with a normal Ig G level,",
+      "true_suffix": "how many of them have symptoms?",
+      "continuation": "there was no significant difference in the incidence of postoperative complications between the two groups. However, in patients with low IgG levels, the incidence of postoperative complications was significantly higher in the group that did not receive immunoglobulin replacement therapy. These findings suggest that immunoglobulin replacement therapy may be",
+      "overlap_f1": 0.036,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many patients with a normal Ig A level",
+      "true_suffix": "came to the hospital after 1990/1/1?",
+      "continuation": "are considered to have a normal immune system function. However, it's essential to note that IgA levels can fluctuate due to various factors, such as infections, autoimmune disorders, or certain medications. A single measurement of IgA levels may not provide a complete picture of a patient's immune system function",
+      "overlap_f1": 0.034,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many patients with a abnormal C-reactive",
+      "true_suffix": "protein don't have their data recorded?",
+      "continuation": "protein (CRP) level were diagnosed with a specific disease, and what were the characteristics of those patients? To answer this question, we need to examine the medical records of patients who underwent CRP testing and were subsequently diagnosed with a specific disease. \n\nWe can start by identifying the patients who had",
+      "overlap_f1": 0.034,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the patients whose creatinine level is abnormal, how",
+      "true_suffix": "many of them aren't 70 yet?",
+      "continuation": "many have a history of kidney disease? What percentage of patients with abnormal creatinine levels also have kidney disease? To answer these questions, we need to examine the relationship between creatinine levels and kidney disease in the patient data.",
+      "overlap_f1": 0.087,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many patients have a normal level of anti-ribonuclear protein",
+      "true_suffix": "and have been admitted to the hospital?",
+      "continuation": "It seems there is no previous text to continue from. If you provide the original text, I can assist you in continuing it.",
+      "overlap_f1": 0.133,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the patients with normal anti-SM, how many",
+      "true_suffix": "of them does not have thrombosis?",
+      "continuation": "have a normal echocardiogram?",
+      "overlap_f1": 0.2,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the patients who has a normal anti-scl70, how many of them",
+      "true_suffix": "are female and does not have any symptom?",
+      "continuation": "have a normal echocardiogram? To answer this, we need to look at the data provided. If we assume that the data is presented in a table format with columns for anti-scl70 results and echocardiogram results, we can proceed as follows: \n\nFirst, identify the patients",
+      "overlap_f1": 0.075,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the patients who has a normal level of anti-centromere and a normal",
+      "true_suffix": "level of anti-SSB, how many of them are male?",
+      "continuation": "level of anti-Scl-70 antibodies, 80% had a normal capillaroscopy result, while 20% had an abnormal capillaroscopy result, with 10% having an early pattern, 5% having an active pattern, and 5% having a late",
+      "overlap_f1": 0.133,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "For the patients with a normal range of creatinine phosphokinase, how many of",
+      "true_suffix": "them have a positive measure of degree of coagulation?",
+      "continuation": "them had a normal range of aspartate aminotransferase, and how many had elevated levels of aspartate aminotransferase? Additionally, what were the corresponding ranges of alanine aminotransferase for these patients, and were there any notable correlations or",
+      "overlap_f1": 0.178,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "At present, calculate for the player's age who have a sprint speed",
+      "true_suffix": "of no less than 97 between 2013 to 2015.",
+      "continuation": "of over 95 in the game FIFA 23. The players with the highest sprint speed are generally the fastest in the game and are often wingers or forwards. Some of the fastest players in FIFA 23 include Adama Traore, Kylian Mbappe, and Alphonso Davies, all",
+      "overlap_f1": 0.037,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Calculate the percentage of players who prefer left foot,",
+      "true_suffix": "who were born between 1987 and 1992.",
+      "continuation": "I don't see any data or context about players and their foot preferences. Could you provide more information or clarify what you are referring to? I'll be happy to help with the calculation once I have a better understanding of the context.",
+      "overlap_f1": 0.039,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the overall rating of the football",
+      "true_suffix": "player Gabriel Tamas in year 2011?",
+      "continuation": "team based on the given information. Unfortunately, there is no information provided about a football team, so I'm unable to determine an overall rating. If you could provide more context or details, I'd be happy to try and assist you further.",
+      "overlap_f1": 0.0,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Calculate the average home team goal in the 2010/2011",
+      "true_suffix": "season in the country of Poland.",
+      "continuation": "English Premier League season. To do this, we need to know the total number of goals scored by home teams and the total number of matches played. \n\nIn the 2010/2011 English Premier League season, there were 380 matches played, with each team playing 19 home matches.",
+      "overlap_f1": 0.151,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "From 2010 to 2015, what was the average overall rating",
+      "true_suffix": "of players who are higher than 170?",
+      "continuation": "of the American television series \"Community\" based on reviews from Rotten Tomatoes? The show received widespread critical acclaim throughout its run, with an average overall rating of 81% on Rotten Tomatoes from 2010 to 2015.",
+      "overlap_f1": 0.048,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the difference of the average ball control score",
+      "true_suffix": "between Abdou Diallo and Aaron Appindangoye ?",
+      "continuation": "of a professional soccer player and that of an amateur soccer player? The average ball control score of a professional soccer player is around 80-90, while that of an amateur soccer player is around 40-60. This significant difference can be attributed to the professional player's extensive training, practice,",
+      "overlap_f1": 0.035,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the players whose preferred foot was the left foot when attacking, how many of",
+      "true_suffix": "them would remain in his position when the team attacked?",
+      "continuation": "the players were forwards, and how many were midfielders or defenders? To answer this question, we need to examine the data more closely.",
+      "overlap_f1": 0.061,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Among the players born before the year 1986, how many of them would",
+      "true_suffix": "remain in his position and defense while the team attacked?",
+      "continuation": "be considered veterans in the league, having played for over a decade, and what impact have they had on the game, in terms of their skills, experience, and leadership, and how have they contributed to the success of their respective teams over the years, and what legacy will they leave behind when they",
+      "overlap_f1": 0.095,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many matches were held in the",
+      "true_suffix": "Belgium Jupiler League in April, 2009?",
+      "continuation": "2006 FIFA World Cup. A total of 64 matches were held in the 2006 FIFA World Cup, which was hosted by Germany from June 9 to July 9, 2006. The tournament featured 32 national teams competing in a series of matches to determine the world champion.",
+      "overlap_f1": 0.038,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How much higher in percentage is Ariel Borysiuk's overall",
+      "true_suffix": "rating than that of Paulin Puel?",
+      "continuation": "rating compared to his shooting rating, 74 to 64, which is a difference of 10. To find the percentage difference, divide 10 by 64 and multiply by 100: (10 / 64) * 100 = 15.625. So, Ariel Borysi",
+      "overlap_f1": 0.095,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What was the average overall rating for",
+      "true_suffix": "Marko Arnautovic from 2007/2/22 to 2016/4/21?",
+      "continuation": "the product based on customer reviews, and how did it compare to similar products in the same category?",
+      "overlap_f1": 0.071,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What percentage is Landon Donovan's overall rating",
+      "true_suffix": "higher than Jordan Bowery on 2013/7/12?",
+      "continuation": "I don't have information about Landon Donovan's overall rating as a percentage. Could you provide more context or details about the source or system you are referring to?",
+      "overlap_f1": 0.0,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many football players born after the",
+      "true_suffix": "1990s have the first name \"Aaron\"?",
+      "continuation": "year 1990 have won the Ballon d'Or award? The answer to this question requires an analysis of the winners of the Ballon d'Or award since 1990 and their respective birth years. The Ballon d'Or is an annual association football award presented to the best player",
+      "overlap_f1": 0.074,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many players had the highest potential score for crossing that",
+      "true_suffix": "preferred to use their left foots while attacking?",
+      "continuation": "I don't see any previous text to continue from. This conversation just started. If you provide the original text, I'll be happy to continue it for you.",
+      "overlap_f1": 0.054,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "What is the percentage of players that are under 180 cm who",
+      "true_suffix": "have an overall strength of more than 70?",
+      "continuation": "have played in the NBA. According to data from the 2020-2021 season, about 12% of players in the NBA are under 180 cm (5'11\") tall. However, it's worth noting that this number can vary from season to season and may not reflect the",
+      "overlap_f1": 0.074,
+      "verbatim_start": false
+    }
+  ]
+}

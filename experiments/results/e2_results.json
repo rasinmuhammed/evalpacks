@@ -1,0 +1,22 @@
+{
+  "seeds": [
+    11,
+    222,
+    3333,
+    44444,
+    20260710
+  ],
+  "all_packs_verified": true,
+  "deterministic_keys_identical": true,
+  "deterministic_questions_per_pack": 28,
+  "rate_anchors_shipped_per_seed": {
+    "11": 7,
+    "222": 7,
+    "3333": 7,
+    "44444": 7,
+    "20260710": 7
+  },
+  "shared_order_ids_seed_pair": 576,
+  "fact_rows": 73629,
+  "shared_fraction": 0.00782
+}

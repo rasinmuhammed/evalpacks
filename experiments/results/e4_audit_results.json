@@ -1,0 +1,255 @@
+{
+  "summary": {
+    "model": "gpt-5.1",
+    "n": 35,
+    "flagged": 10,
+    "flag_rate": 0.286
+  },
+  "rows": [
+    {
+      "id": "q001",
+      "kind": "outcome_curve_period",
+      "defect": true,
+      "category": "answer_type",
+      "reason": "The SQL returns a value rounded to 2 decimal places whereas the expected answer has only one decimal place, so the formatting/precision of the numeric answer is inconsistent with the question and query."
+    },
+    {
+      "id": "q002",
+      "kind": "outcome_curve_period",
+      "defect": true,
+      "category": "answer_type",
+      "reason": "The SQL returns a numeric value rounded to two decimal places, but the expected answer is given as 397500.0 with only one decimal place instead of two."
+    },
+    {
+      "id": "q003",
+      "kind": "outcome_curve_period",
+      "defect": true,
+      "category": "answer_type",
+      "reason": "The SQL returns a value rounded to 2 decimal places, so the expected answer should also be formatted with exactly two decimal places (e.g., 385000.00, not 385000.0)."
+    },
+    {
+      "id": "q004",
+      "kind": "outcome_curve_period",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly sums amount over the specified exclusive date range for April 2025 and rounds to two decimals using the proper table and columns, matching the question unambiguously and yielding a numeric result as expected."
+    },
+    {
+      "id": "q005",
+      "kind": "outcome_curve_period",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly sums amount for order_date in [2025-05-01, 2025-06-01) and rounds to two decimals, matching the question and schema, and the expected answer is of the correct type."
+    },
+    {
+      "id": "q006",
+      "kind": "outcome_curve_period",
+      "defect": true,
+      "category": "answer_type",
+      "reason": "The SQL returns a value rounded to 2 decimal places, but the expected answer is given as 512000.0 with only one decimal, which is inconsistent with the specified rounding requirement."
+    },
+    {
+      "id": "q007",
+      "kind": "outcome_curve_period",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly filters orders between 2025-07-01 (inclusive) and 2025-08-01 (exclusive), sums amount, and rounds to 2 decimals, matching the question semantics and schema, and yielding a numeric result as expected."
+    },
+    {
+      "id": "q008",
+      "kind": "outcome_curve_period",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly sums amount over the specified August 2025 date range with appropriate inclusive/exclusive bounds and rounding, using the correct table and columns, and returning a single numeric value as expected."
+    },
+    {
+      "id": "q009",
+      "kind": "outcome_curve_period",
+      "defect": true,
+      "category": "answer_type",
+      "reason": "The expected answer 468000.0 has only one decimal place while the question and SQL specify rounding to two decimal places, so the format is inconsistent."
+    },
+    {
+      "id": "q010",
+      "kind": "outcome_curve_period",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly matches the question\u2019s date boundaries, aggregation, and rounding on the specified table and column, and the expected numeric answer type is consistent with the query result."
+    },
+    {
+      "id": "q011",
+      "kind": "outcome_curve_period",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL matches the stated date range and aggregation on amount with correct rounding, uses the correct table/column, and the expected numeric answer type is consistent with the SQL output."
+    },
+    {
+      "id": "q012",
+      "kind": "outcome_curve_period",
+      "defect": true,
+      "category": "answer_type",
+      "reason": "The question asks for a number rounded to 2 decimal places but the expected answer has only one decimal place, so the format does not match the stated requirement."
+    },
+    {
+      "id": "q013",
+      "kind": "outcome_curve_total",
+      "defect": true,
+      "category": "answer_type",
+      "reason": "The SQL rounds to 2 decimal places but the expected answer has only one decimal place, so the numeric format does not match the question\u2019s requirement."
+    },
+    {
+      "id": "q014",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts orders with order_date in [2025-01-01, 2025-02-01) as specified, using the appropriate table and columns and returning an integer as requested."
+    },
+    {
+      "id": "q015",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts rows in orders with order_date from 2025-02-01 inclusive to 2025-03-01 exclusive, matching the question\u2019s definition of February 2025, uses the proper table/column, and returns a single integer as expected."
+    },
+    {
+      "id": "q016",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts orders with order_date in [2025-03-01, 2025-04-01) from the orders table as specified, with no evident ambiguity, schema error, or answer-type mismatch."
+    },
+    {
+      "id": "q017",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts rows in orders with order_date on or after 2025-04-01 and before 2025-05-01 as specified, using the proper table/column and returning a single integer as requested."
+    },
+    {
+      "id": "q018",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts orders with order_date in [2025-05-01, 2025-06-01), matching the described May 2025 range, uses the proper table/column, and returns a single integer as requested without ambiguity."
+    },
+    {
+      "id": "q019",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts orders with order_date in [2025-06-01, 2025-07-01), matching the question\u2019s June 2025 time window and expected integer count."
+    },
+    {
+      "id": "q020",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts orders with order_date in [2025-07-01, 2025-08-01), matching the question\u2019s specified July 2025 interval and answer type."
+    },
+    {
+      "id": "q021",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts rows in orders with order_date in [2025-08-01, 2025-09-01), matching the question\u2019s August 2025 interval interpretation and returning a single integer as expected."
+    },
+    {
+      "id": "q022",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts orders with order_date in [2025-09-01, 2025-10-01) from the orders table, matching the question\u2019s intent and answer type without ambiguity or schema issues."
+    },
+    {
+      "id": "q023",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts orders in the given October 2025 date range with appropriate inclusive/exclusive bounds, uses the right table/column, and returns a single integer as requested."
+    },
+    {
+      "id": "q024",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts rows in orders with order_date in [2025-11-01, 2025-12-01) as specified, using the right table/column and returning an integer count."
+    },
+    {
+      "id": "q025",
+      "kind": "plan_row_count",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly counts rows in orders with order_date in [2025-12-01, 2026-01-01), matching the described December 2025 interval, uses the proper table/column, and returns an integer as requested."
+    },
+    {
+      "id": "q026",
+      "kind": "outcome_curve_argmax",
+      "defect": true,
+      "category": "semantic_mismatch",
+      "reason": "The SQL uses date_trunc('month', order_date) then strftime, which is PostgreSQL-style mixed with SQLite-style and may not accurately or portably implement grouping by calendar month as implied by the question."
+    },
+    {
+      "id": "q028",
+      "kind": "rate_curve_anchor",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly computes the February 2025 fraction of rows with is_fraud = TRUE using the specified inclusive/exclusive date bounds and rounding, matches the schema, and returns a numeric value consistent with the expected answer format."
+    },
+    {
+      "id": "q029",
+      "kind": "rate_curve_anchor",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly computes the fraction of March 2025 orders with is_fraud = TRUE using the specified date bounds and rounding, matches the schema, and returns a numeric value consistent with the expected answer format."
+    },
+    {
+      "id": "q030",
+      "kind": "rate_curve_anchor",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly computes the fraction of April 2025 orders with is_fraud = TRUE using the specified time bounds and rounding, matches the schema, and returns a scalar numeric answer as expected."
+    },
+    {
+      "id": "q031",
+      "kind": "rate_curve_anchor",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly matches the time-window, condition on is_fraud, aggregation as a fraction, and rounding requirements of the question using the proper table and columns, and the expected answer is of the correct type."
+    },
+    {
+      "id": "q033",
+      "kind": "rate_curve_anchor",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly computes the fraction of July 2025 orders with is_fraud = TRUE using the specified time range and rounding, matches the schema, and returns a scalar numeric consistent with the expected answer format."
+    },
+    {
+      "id": "q035",
+      "kind": "rate_curve_anchor",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly computes the fraction of orders in the specified September 2025 date range with is_fraud = TRUE, using the proper table, columns, boundaries, and rounding to 4 decimal places, and the expected answer type matches the query result."
+    },
+    {
+      "id": "q038",
+      "kind": "rate_curve_anchor",
+      "defect": false,
+      "category": "none",
+      "reason": "The SQL correctly computes the fraction of December 2025 orders with is_fraud = TRUE over the specified date range with proper inclusivity/exclusivity and rounding, using the appropriate table and columns, and returns a numeric value consistent with the expected answer format."
+    },
+    {
+      "id": "q039",
+      "kind": "fk_integrity",
+      "defect": true,
+      "category": "semantic_mismatch",
+      "reason": "The SQL excludes NULL customer_id rows by requiring c.customer_id IS NOT NULL, but the question says to count NULL customer_id values as matching and thus they should be excluded from the mismatch count without a separate condition on c.customer_id."
+    },
+    {
+      "id": "q040",
+      "kind": "fk_integrity",
+      "defect": true,
+      "category": "semantic_mismatch",
+      "reason": "The SQL excludes rows with NULL product_id by requiring c.product_id IS NOT NULL, but the question says to count NULL product_id values as matching (i.e., they should not be counted as mismatches), so they should still be included in the join condition but excluded from the mismatch count without that filter."
+    }
+  ]
+}

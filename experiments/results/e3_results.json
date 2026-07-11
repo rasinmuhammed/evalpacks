@@ -1,0 +1,42 @@
+[
+  {
+    "target_rows": 10000,
+    "actual_fact_rows": 9999,
+    "questions": 27,
+    "all_verified": true,
+    "consumer_verify_ok": true,
+    "build_s": 1.1,
+    "verify_s": 0.9,
+    "size_mb": 0.6
+  },
+  {
+    "target_rows": 100000,
+    "actual_fact_rows": 100000,
+    "questions": 27,
+    "all_verified": true,
+    "consumer_verify_ok": true,
+    "build_s": 1.9,
+    "verify_s": 1.6,
+    "size_mb": 5.5
+  },
+  {
+    "target_rows": 1000000,
+    "actual_fact_rows": 1000002,
+    "questions": 27,
+    "all_verified": true,
+    "consumer_verify_ok": true,
+    "build_s": 5.3,
+    "verify_s": 2.6,
+    "size_mb": 55.1
+  },
+  {
+    "target_rows": 10000000,
+    "actual_fact_rows": 10000002,
+    "questions": 27,
+    "all_verified": true,
+    "consumer_verify_ok": true,
+    "build_s": 41.1,
+    "verify_s": 12.0,
+    "size_mb": 550.3
+  }
+]

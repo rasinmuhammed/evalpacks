@@ -1,0 +1,976 @@
+{
+  "summary": {
+    "model": "gpt-5-mini",
+    "source": "bird_items.jsonl",
+    "n": 120,
+    "per_class": {
+      "numeric_exact": {
+        "n": 120,
+        "hits": 4,
+        "accuracy": 0.03333333333333333
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "bird1471",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 0.07,
+      "model_raw": "0.25",
+      "correct": false
+    },
+    {
+      "id": "bird1472",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 47273,
+      "model_raw": "No data available",
+      "correct": false
+    },
+    {
+      "id": "bird1473",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 459.96,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1476",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 402524570.17,
+      "model_raw": "120",
+      "correct": false
+    },
+    {
+      "id": "bird1483",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 1224.96,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1484",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 176,
+      "model_raw": "about 200",
+      "correct": false
+    },
+    {
+      "id": "bird1486",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 23505,
+      "model_raw": "Yes \u2014 12000",
+      "correct": false
+    },
+    {
+      "id": "bird1490",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 98.53,
+      "model_raw": "23.5%",
+      "correct": false
+    },
+    {
+      "id": "bird1493",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 66.62,
+      "model_raw": "12.5",
+      "correct": false
+    },
+    {
+      "id": "bird1498",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 51787161.74,
+      "model_raw": "8742",
+      "correct": false
+    },
+    {
+      "id": "bird1505",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 2730,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1509",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 933,
+      "model_raw": "35281",
+      "correct": false
+    },
+    {
+      "id": "bird1521",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 14,
+      "model_raw": "13",
+      "correct": false
+    },
+    {
+      "id": "bird1525",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 1.65,
+      "model_raw": "27%",
+      "correct": false
+    },
+    {
+      "id": "bird1528",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 35.68,
+      "model_raw": "12.5",
+      "correct": false
+    },
+    {
+      "id": "bird1317",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 7,
+      "model_raw": "7",
+      "correct": true
+    },
+    {
+      "id": "bird1331",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 50,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1339",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 74.08,
+      "model_raw": "237.50",
+      "correct": false
+    },
+    {
+      "id": "bird1340",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 2086.05,
+      "model_raw": "-4500",
+      "correct": false
+    },
+    {
+      "id": "bird1352",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "27",
+      "correct": false
+    },
+    {
+      "id": "bird1359",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 2.73,
+      "model_raw": "2",
+      "correct": false
+    },
+    {
+      "id": "bird1361",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 600.11,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1362",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 7,
+      "model_raw": "1",
+      "correct": false
+    },
+    {
+      "id": "bird1371",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 17,
+      "model_raw": "24",
+      "correct": false
+    },
+    {
+      "id": "bird1378",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 327.07,
+      "model_raw": "125000",
+      "correct": false
+    },
+    {
+      "id": "bird1380",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 1234.73,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1390",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 21.53,
+      "model_raw": "23%",
+      "correct": false
+    },
+    {
+      "id": "bird1394",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1401",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 67.81,
+      "model_raw": "75",
+      "correct": false
+    },
+    {
+      "id": "bird1409",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 122.06,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1432",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 100.0,
+      "model_raw": "33%",
+      "correct": false
+    },
+    {
+      "id": "bird1149",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 83.18,
+      "model_raw": "in-patient, 8%",
+      "correct": false
+    },
+    {
+      "id": "bird1150",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 94.04,
+      "model_raw": "72%",
+      "correct": false
+    },
+    {
+      "id": "bird1152",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 1.31,
+      "model_raw": "1.8",
+      "correct": false
+    },
+    {
+      "id": "bird1162",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 161,
+      "model_raw": "27",
+      "correct": false
+    },
+    {
+      "id": "bird1164",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "7",
+      "correct": false
+    },
+    {
+      "id": "bird1169",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 0.21,
+      "model_raw": "1.2:1",
+      "correct": false
+    },
+    {
+      "id": "bird1171",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1185",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 0.06,
+      "model_raw": "-17.2%",
+      "correct": false
+    },
+    {
+      "id": "bird1189",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 3,
+      "model_raw": "3",
+      "correct": true
+    },
+    {
+      "id": "bird1195",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 3.91,
+      "model_raw": "3.8",
+      "correct": false
+    },
+    {
+      "id": "bird1198",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 16,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1201",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 100.0,
+      "model_raw": "75",
+      "correct": false
+    },
+    {
+      "id": "bird1227",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 74.69,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1229",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 106,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1231",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 2,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1241",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": -562,
+      "model_raw": "42 lower, 58 higher",
+      "correct": false
+    },
+    {
+      "id": "bird1243",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 1.2,
+      "model_raw": "27%",
+      "correct": false
+    },
+    {
+      "id": "bird1247",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 75,
+      "model_raw": "7",
+      "correct": false
+    },
+    {
+      "id": "bird1251",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 9,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1252",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 4,
+      "model_raw": "27",
+      "correct": false
+    },
+    {
+      "id": "bird1254",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1590,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1256",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 208,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1257",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 4,
+      "model_raw": "13",
+      "correct": false
+    },
+    {
+      "id": "bird1265",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 47,
+      "model_raw": "27",
+      "correct": false
+    },
+    {
+      "id": "bird1267",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 7,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird1270",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 2,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1275",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1302",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 7,
+      "model_raw": "27",
+      "correct": false
+    },
+    {
+      "id": "bird1031",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 36,
+      "model_raw": "26",
+      "correct": false
+    },
+    {
+      "id": "bird1037",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 24.57,
+      "model_raw": "18%",
+      "correct": false
+    },
+    {
+      "id": "bird1039",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 61.57,
+      "model_raw": "3",
+      "correct": false
+    },
+    {
+      "id": "bird1048",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 75,
+      "model_raw": "75",
+      "correct": true
+    },
+    {
+      "id": "bird1057",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 1.5,
+      "model_raw": "1.35",
+      "correct": false
+    },
+    {
+      "id": "bird1068",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 68.9,
+      "model_raw": "183",
+      "correct": false
+    },
+    {
+      "id": "bird1076",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 0.8,
+      "model_raw": "0.1",
+      "correct": false
+    },
+    {
+      "id": "bird1080",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1569,
+      "model_raw": "12",
+      "correct": false
+    },
+    {
+      "id": "bird1084",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 892,
+      "model_raw": "12",
+      "correct": false
+    },
+    {
+      "id": "bird1091",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 36,
+      "model_raw": "30",
+      "correct": false
+    },
+    {
+      "id": "bird1094",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 133.73,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird1096",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 61.67,
+      "model_raw": "4.2",
+      "correct": false
+    },
+    {
+      "id": "bird1103",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 75,
+      "model_raw": "7",
+      "correct": false
+    },
+    {
+      "id": "bird1114",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 75.39,
+      "model_raw": "73",
+      "correct": false
+    },
+    {
+      "id": "bird1115",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 25.32,
+      "model_raw": "12%",
+      "correct": false
+    },
+    {
+      "id": "bird1133",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 9,
+      "model_raw": "3",
+      "correct": false
+    },
+    {
+      "id": "bird1134",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "7",
+      "correct": false
+    },
+    {
+      "id": "bird1136",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 3,
+      "model_raw": "7",
+      "correct": false
+    },
+    {
+      "id": "bird1148",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 13.94,
+      "model_raw": "18",
+      "correct": false
+    },
+    {
+      "id": "bird0862",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 12,
+      "model_raw": "7",
+      "correct": false
+    },
+    {
+      "id": "bird0880",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 32.5,
+      "model_raw": "7.5%",
+      "correct": false
+    },
+    {
+      "id": "bird0881",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 17.24,
+      "model_raw": "0.75",
+      "correct": false
+    },
+    {
+      "id": "bird0895",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 109398.55,
+      "model_raw": "95.3",
+      "correct": false
+    },
+    {
+      "id": "bird0896",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 74.0,
+      "model_raw": "12.5",
+      "correct": false
+    },
+    {
+      "id": "bird0909",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 52.17,
+      "model_raw": "12.5",
+      "correct": false
+    },
+    {
+      "id": "bird0933",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "6",
+      "correct": false
+    },
+    {
+      "id": "bird0940",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 14,
+      "model_raw": "20",
+      "correct": false
+    },
+    {
+      "id": "bird0944",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 0.32,
+      "model_raw": "5.64%",
+      "correct": false
+    },
+    {
+      "id": "bird0945",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "6",
+      "correct": false
+    },
+    {
+      "id": "bird0948",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 497.0,
+      "model_raw": "563",
+      "correct": false
+    },
+    {
+      "id": "bird0951",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 2,
+      "model_raw": "2",
+      "correct": true
+    },
+    {
+      "id": "bird0954",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 27.27,
+      "model_raw": "42.3%",
+      "correct": false
+    },
+    {
+      "id": "bird0960",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 199.64,
+      "model_raw": "227.261",
+      "correct": false
+    },
+    {
+      "id": "bird0962",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 64.62,
+      "model_raw": "37%",
+      "correct": false
+    },
+    {
+      "id": "bird0963",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 24465,
+      "model_raw": "3",
+      "correct": false
+    },
+    {
+      "id": "bird0967",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 1,
+      "model_raw": "12",
+      "correct": false
+    },
+    {
+      "id": "bird0977",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 2,
+      "model_raw": "7",
+      "correct": false
+    },
+    {
+      "id": "bird1003",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 2,
+      "model_raw": "6",
+      "correct": false
+    },
+    {
+      "id": "bird0719",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 56,
+      "model_raw": "12",
+      "correct": false
+    },
+    {
+      "id": "bird0723",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 83,
+      "model_raw": "19",
+      "correct": false
+    },
+    {
+      "id": "bird0733",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 2,
+      "model_raw": "1",
+      "correct": false
+    },
+    {
+      "id": "bird0740",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 12,
+      "model_raw": "7",
+      "correct": false
+    },
+    {
+      "id": "bird0744",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 163,
+      "model_raw": "2000",
+      "correct": false
+    },
+    {
+      "id": "bird0745",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 20,
+      "model_raw": "9",
+      "correct": false
+    },
+    {
+      "id": "bird0747",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 122,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird0750",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 60.78,
+      "model_raw": "137",
+      "correct": false
+    },
+    {
+      "id": "bird0760",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 60.87,
+      "model_raw": "62%",
+      "correct": false
+    },
+    {
+      "id": "bird0765",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 127,
+      "model_raw": "3",
+      "correct": false
+    },
+    {
+      "id": "bird0775",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 2.46,
+      "model_raw": "27%",
+      "correct": false
+    },
+    {
+      "id": "bird0779",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 44,
+      "model_raw": "1",
+      "correct": false
+    },
+    {
+      "id": "bird0786",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 63,
+      "model_raw": "3",
+      "correct": false
+    },
+    {
+      "id": "bird0788",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 28.68,
+      "model_raw": "45",
+      "correct": false
+    },
+    {
+      "id": "bird0790",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 351,
+      "model_raw": "60",
+      "correct": false
+    },
+    {
+      "id": "bird0791",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 247.05,
+      "model_raw": "178",
+      "correct": false
+    },
+    {
+      "id": "bird0800",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 31.2,
+      "model_raw": "23",
+      "correct": false
+    },
+    {
+      "id": "bird0801",
+      "class": "numeric_exact",
+      "kind": "numeric_exact",
+      "expected": 2.56,
+      "model_raw": "3.2:1",
+      "correct": false
+    },
+    {
+      "id": "bird0819",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": -122,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird0822",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 6,
+      "model_raw": "42",
+      "correct": false
+    },
+    {
+      "id": "bird0829",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": -163,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird0533",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 4941,
+      "model_raw": "0",
+      "correct": false
+    },
+    {
+      "id": "bird0537",
+      "class": "numeric_exact",
+      "kind": "count",
+      "expected": 121,
+      "model_raw": "0",
+      "correct": false
+    }
+  ]
+}

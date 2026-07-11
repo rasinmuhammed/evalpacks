@@ -1,0 +1,306 @@
+{
+  "summary": {
+    "model": "openai/gpt-oss-120b",
+    "source": "/Users/muhammedrasin/misata-project/evalpack-demo/pack/questions.jsonl",
+    "n": 35,
+    "per_class": {
+      "count": {
+        "n": 12,
+        "hits": 0,
+        "accuracy": 0.0
+      },
+      "guessable": {
+        "n": 3,
+        "hits": 0,
+        "accuracy": 0.0
+      },
+      "numeric_exact": {
+        "n": 20,
+        "hits": 0,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "q001",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 410000.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q002",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 397500.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q003",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 385000.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q004",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 427333.33,
+      "model_raw": "123456.78",
+      "correct": false
+    },
+    {
+      "id": "q005",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 469666.67,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q006",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 512000.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q007",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 497333.33,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q008",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 482666.67,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q009",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 468000.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q010",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 609000.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q011",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 750000.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q012",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_period",
+      "expected": 905000.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q013",
+      "class": "numeric_exact",
+      "kind": "outcome_curve_total",
+      "expected": 6313500.0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q014",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 4824,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q015",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 4676,
+      "model_raw": "12458",
+      "correct": false
+    },
+    {
+      "id": "q016",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 4529,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q017",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 5027,
+      "model_raw": "12458",
+      "correct": false
+    },
+    {
+      "id": "q018",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 5525,
+      "model_raw": "12457",
+      "correct": false
+    },
+    {
+      "id": "q019",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 6024,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q020",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 5851,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q021",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 5678,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q022",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 5506,
+      "model_raw": "12456",
+      "correct": false
+    },
+    {
+      "id": "q023",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 7165,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q024",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 8824,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q025",
+      "class": "count",
+      "kind": "plan_row_count",
+      "expected": 10000,
+      "model_raw": "8427",
+      "correct": false
+    },
+    {
+      "id": "q026",
+      "class": "guessable",
+      "kind": "outcome_curve_argmax",
+      "expected": "2025-12",
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q028",
+      "class": "numeric_exact",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0214,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q029",
+      "class": "numeric_exact",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0227,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q030",
+      "class": "numeric_exact",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0241,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q031",
+      "class": "numeric_exact",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0255,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q033",
+      "class": "numeric_exact",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0282,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q035",
+      "class": "numeric_exact",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0309,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q038",
+      "class": "numeric_exact",
+      "kind": "rate_curve_anchor",
+      "expected": 0.035,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q039",
+      "class": "guessable",
+      "kind": "fk_integrity",
+      "expected": 0,
+      "model_raw": "",
+      "correct": false
+    },
+    {
+      "id": "q040",
+      "class": "guessable",
+      "kind": "fk_integrity",
+      "expected": 0,
+      "model_raw": "",
+      "correct": false
+    }
+  ]
+}

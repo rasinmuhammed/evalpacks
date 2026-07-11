@@ -1,0 +1,258 @@
+{
+  "summary": {
+    "model": "llama-3.3-70b-versatile",
+    "source": "/Users/muhammedrasin/misata-project/evalpack-demo/pack/questions.jsonl",
+    "n": 35,
+    "mean_f1": 0.269,
+    "median_f1": 0.293,
+    "p90_f1": 0.4,
+    "verbatim_start_rate": 0.0
+  },
+  "rows": [
+    {
+      "prefix": "In the orders table, what is the total of amount during January 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-01-01 and strictly before 2025-02-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-01-01 00:00:00' and before '2025-02-01 00:00:00') for each region, and find the region with the highest total amount?",
+      "overlap_f1": 0.4,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during February 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-02-01 and strictly before 2025-03-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-02-01 00:00:00' and before '2025-03-01 00:00:00') for each product_id? \n\nSELECT product_id, SUM(amount) \nFROM orders \nWHERE timestamp >= '2025-02-01 00",
+      "overlap_f1": 0.36,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during March 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-03-01 and strictly before 2025-04-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after 2025-03-01 and before 2025-04-01)? You can calculate this using the following SQL query: \n\nSELECT SUM(amount) \nFROM orders \nWHERE timestamp >= '2025-03-01' AND timestamp < '2025-04-01';",
+      "overlap_f1": 0.353,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during April 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-04-01 and strictly before 2025-05-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-04-01 00:00:00' and before '2025-05-01 00:00:00') for each product_id? \n\nSELECT product_id, SUM(amount) \nFROM orders \nWHERE timestamp >= '2025-04-01 00",
+      "overlap_f1": 0.36,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during May 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-05-01 and strictly before 2025-06-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-05-01 00:00:00' and before '2025-06-01 00:00:00') for each product_id? \n\nSELECT product_id, SUM(amount) \nFROM orders \nWHERE timestamp >= '2025-05-01 00",
+      "overlap_f1": 0.36,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during June 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-06-01 and strictly before 2025-07-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-06-01 00:00:00' and before '2025-07-01 00:00:00') for each product_id? \n\nSELECT product_id, SUM(amount) \nFROM orders \nWHERE timestamp >= '2025-06-01 00",
+      "overlap_f1": 0.36,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during July 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-07-01 and strictly before 2025-08-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-07-01 00:00:00' and before '2025-08-01 00:00:00') for each region, and find the region with the highest total amount?",
+      "overlap_f1": 0.4,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during August 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-08-01 and strictly before 2025-09-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-08-01 00:00:00' and before '2025-09-01 00:00:00') for each product_id? \n\nSELECT product_id, SUM(amount) \nFROM orders \nWHERE timestamp >= '2025-08-01 00",
+      "overlap_f1": 0.36,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during September 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-09-01 and strictly before 2025-10-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-09-01 00:00:00' and before '2025-10-01 00:00:00') for each product_id? \n\nSELECT product_id, SUM(amount) \nFROM orders \nWHERE timestamp >= '2025-09-01 00",
+      "overlap_f1": 0.36,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during October 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-10-01 and strictly before 2025-11-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-10-01 00:00:00' and before '2025-11-01 00:00:00') for each region, and find the region with the highest total amount?",
+      "overlap_f1": 0.4,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during November 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-11-01 and strictly before 2025-12-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-11-01 00:00:00' and before '2025-12-01 00:00:00') for each region, and find the region with the highest total amount?",
+      "overlap_f1": 0.4,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount during December 2025 (rows whose timestamp is on or",
+      "true_suffix": "after 2025-12-01 and strictly before 2026-01-01)? Give a number rounded to 2 decimal places.",
+      "continuation": "after '2025-12-01 00:00:00' and before '2025-12-31 23:59:59') for each product_id? \n\nSELECT product_id, SUM(amount) \nFROM orders \nWHERE timestamp >= '2025-12-01 00",
+      "overlap_f1": 0.28,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what is the total of amount across all rows whose order_date is on or after",
+      "true_suffix": "2025-01-01 and strictly before 2026-01-01? Give a number rounded to 2 decimal places.",
+      "continuation": "January 1, 2005, and whose customer_id is either 3005 or 3009? To answer this question, you would use the following query: \n\nSELECT SUM(amount) \nFROM orders \nWHERE order_date >= '2005-01-01' \nAND customer_id IN",
+      "overlap_f1": 0.148,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during January 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-01-01 and strictly before 2025-02-01)? Give an integer.",
+      "continuation": "within the month of January 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 1 \n  AND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query",
+      "overlap_f1": 0.12,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during February 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-02-01 and strictly before 2025-03-01)? Give an integer.",
+      "continuation": "within the month of February 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 2 \nAND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query will",
+      "overlap_f1": 0.118,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during March 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-03-01 and strictly before 2025-04-01)? Give an integer.",
+      "continuation": "within the month of March 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 3 \n  AND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query",
+      "overlap_f1": 0.12,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during April 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-04-01 and strictly before 2025-05-01)? Give an integer.",
+      "continuation": "within the month of April 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 4 \n  AND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query",
+      "overlap_f1": 0.12,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during May 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-05-01 and strictly before 2025-06-01)? Give an integer.",
+      "continuation": "within the month of May 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 5 \n  AND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query",
+      "overlap_f1": 0.12,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during June 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-06-01 and strictly before 2025-07-01)? Give an integer.",
+      "continuation": "within the month of June 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE timestamp >= '2025-06-01' AND timestamp < '2025-07-01'; \n\nThis query will return the number of",
+      "overlap_f1": 0.264,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during July 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-07-01 and strictly before 2025-08-01)? Give an integer.",
+      "continuation": "within the month of July 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 7 \n  AND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query",
+      "overlap_f1": 0.12,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during August 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-08-01 and strictly before 2025-09-01)? Give an integer.",
+      "continuation": "within the month of August 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE timestamp >= '2025-08-01' AND timestamp < '2025-09-01'; \n\nThis query will return the number of",
+      "overlap_f1": 0.264,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during September 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-09-01 and strictly before 2025-10-01)? Give an integer.",
+      "continuation": "within the month of September 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 9 \n  AND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query",
+      "overlap_f1": 0.12,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during October 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-10-01 and strictly before 2025-11-01)? Give an integer.",
+      "continuation": "within the month of October 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 10 \n  AND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query",
+      "overlap_f1": 0.16,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during November 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-11-01 and strictly before 2025-12-01)? Give an integer.",
+      "continuation": "within the month of November 2025)? To answer this question, you would use a query like this: \n\nSELECT COUNT(*) \nFROM orders \nWHERE timestamp >= '2025-11-01' \n  AND timestamp < '2025-12-01'; \n\nThis query counts the number",
+      "overlap_f1": 0.275,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows does the orders table contain during December 2025 (rows whose timestamp is",
+      "true_suffix": "on or after 2025-12-01 and strictly before 2026-01-01)? Give an integer.",
+      "continuation": "within the month of December 2025)? To answer this question, we can use the following SQL query: \n\nSELECT COUNT(*) \nFROM orders \nWHERE EXTRACT(MONTH FROM timestamp) = 12 \n  AND EXTRACT(YEAR FROM timestamp) = 2025; \n\nThis query",
+      "overlap_f1": 0.12,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "Which calendar month (format YYYY-MM) has the highest total of amount in the",
+      "true_suffix": "orders table? If several months tie, answer the earliest one.",
+      "continuation": "data. To solve this, we can use the following SQL query to get the desired result:\n\n```sql\nSELECT \n    DATE_FORMAT(date, '%Y-%m') AS month,\n    SUM(amount) AS total_amount\nFROM \n    your_table\nGROUP BY \n    DATE_FORMAT(date, '%",
+      "overlap_f1": 0.083,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what fraction of rows during February 2025 (rows whose timestamp is on or after 2025-02-01 and strictly",
+      "true_suffix": "before 2025-03-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "continuation": "before 2025-03-01) have a non-null value for the total_amount column and a null value for the discount_code column?",
+      "overlap_f1": 0.293,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what fraction of rows during March 2025 (rows whose timestamp is on or after 2025-03-01 and strictly",
+      "true_suffix": "before 2025-04-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "continuation": "before 2025-04-01) have a non-null value for the total_amount column and a null value for the discount_code column?",
+      "overlap_f1": 0.293,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what fraction of rows during April 2025 (rows whose timestamp is on or after 2025-04-01 and strictly",
+      "true_suffix": "before 2025-05-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "continuation": "before 2025-05-01) have a non-null value for the total_amount column and a null value for the discount_code column?",
+      "overlap_f1": 0.293,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what fraction of rows during May 2025 (rows whose timestamp is on or after 2025-05-01 and strictly",
+      "true_suffix": "before 2025-06-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "continuation": "before 2025-06-01) have a non-null value for the total_amount column, among the rows where the country is either USA or Canada?",
+      "overlap_f1": 0.326,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what fraction of rows during July 2025 (rows whose timestamp is on or after 2025-07-01 and strictly",
+      "true_suffix": "before 2025-08-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "continuation": "before 2025-08-01) have a non-null value for the total_amount column and a null value for the discount_code column?",
+      "overlap_f1": 0.293,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what fraction of rows during September 2025 (rows whose timestamp is on or after 2025-09-01 and strictly",
+      "true_suffix": "before 2025-10-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "continuation": "before 2025-10-01) have a non-null value for the 'coupon' column, rounded to two decimal places?",
+      "overlap_f1": 0.556,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "In the orders table, what fraction of rows during December 2025 (rows whose timestamp is on or after 2025-12-01 and strictly",
+      "true_suffix": "before 2026-01-01) have is_fraud equal to True? Give a number rounded to 4 decimal places.",
+      "continuation": "before 2026-01-01) have a total order value greater than $1000? To solve this, first filter the orders table to only include rows where the timestamp is on or after 2025-12-01 and strictly before 2026-01-01. Then,",
+      "overlap_f1": 0.305,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows in the orders table have a customer_id value that does not appear in the customer_id column",
+      "true_suffix": "of the customers table? Count NULL customer_id values as matching. Give an integer.",
+      "continuation": "To find the number of rows in the orders table that have a customer_id value that does not appear in the customer_id column of the customers table, you can use a SQL query with a LEFT JOIN and IS NULL condition. Here is an example:\n\n```sql\nSELECT COUNT(o.order_id)\nFROM",
+      "overlap_f1": 0.265,
+      "verbatim_start": false
+    },
+    {
+      "prefix": "How many rows in the orders table have a product_id value that does not appear in the product_id column",
+      "true_suffix": "of the products table? Count NULL product_id values as matching. Give an integer.",
+      "continuation": "To find the number of rows in the orders table that have a product_id value that does not appear in the product_id column of the products table, you can use a SQL query that involves a LEFT JOIN and a check for NULL values. Here's how you can do it:\n\n```sql\nSELECT",
+      "overlap_f1": 0.232,
+      "verbatim_start": false
+    }
+  ]
+}

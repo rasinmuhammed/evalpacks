@@ -1,0 +1,365 @@
+{
+  "summary": {
+    "model": "gpt-5-mini",
+    "n": 35,
+    "correct": 34,
+    "accuracy": 0.971,
+    "exec_errors": 1,
+    "between_usage": 0,
+    "misses_by_kind": {
+      "outcome_curve_argmax": 1
+    }
+  },
+  "rows": [
+    {
+      "id": "q001",
+      "kind": "outcome_curve_period",
+      "expected": 410000.0,
+      "model_sql": "SELECT ROUND(SUM(amount)::DOUBLE, 2) AS total_amount\nFROM orders\nWHERE order_date >= DATE '2025-01-01' AND order_date < DATE '2025-02-01'",
+      "observed": 410000.0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q002",
+      "kind": "outcome_curve_period",
+      "expected": 397500.0,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount),0)::DECIMAL(18,2),2) AS total_amount_feb_2025\nFROM orders\nWHERE order_date >= TIMESTAMP '2025-02-01 00:00:00'\n  AND order_date < TIMESTAMP '2025-03-01 00:00:00'",
+      "observed": "397500.00",
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q003",
+      "kind": "outcome_curve_period",
+      "expected": 385000.0,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount), 0.0), 2) AS total_amount_march_2025\nFROM orders\nWHERE order_date >= DATE '2025-03-01' AND order_date < DATE '2025-04-01'",
+      "observed": 385000.0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q004",
+      "kind": "outcome_curve_period",
+      "expected": 427333.33,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount),0)::NUMERIC,2) AS total_amount_april_2025\nFROM orders\nWHERE order_date >= DATE '2025-04-01' AND order_date < DATE '2025-05-01'",
+      "observed": "427333.33",
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q005",
+      "kind": "outcome_curve_period",
+      "expected": 469666.67,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount),0)::NUMERIC, 2) AS total_amount_may_2025\nFROM orders\nWHERE order_date >= DATE '2025-05-01'\n  AND order_date < DATE '2025-06-01'",
+      "observed": "469666.67",
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q006",
+      "kind": "outcome_curve_period",
+      "expected": 512000.0,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount), 0.0), 2) AS total_amount_june_2025\nFROM orders\nWHERE order_date >= DATE '2025-06-01' AND order_date < DATE '2025-07-01'",
+      "observed": 512000.0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q007",
+      "kind": "outcome_curve_period",
+      "expected": 497333.33,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount),0)::NUMERIC,2) AS total_amount_july_2025\nFROM orders\nWHERE order_date >= '2025-07-01' AND order_date < '2025-08-01'",
+      "observed": "497333.33",
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q008",
+      "kind": "outcome_curve_period",
+      "expected": 482666.67,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount), 0), 2) AS total_amount_aug_2025\nFROM orders\nWHERE order_date >= DATE '2025-08-01' AND order_date < DATE '2025-09-01'",
+      "observed": 482666.67,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q009",
+      "kind": "outcome_curve_period",
+      "expected": 468000.0,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount), 0.0), 2) AS total_amount_sept_2025\nFROM orders\nWHERE order_date >= DATE '2025-09-01' AND order_date < DATE '2025-10-01'",
+      "observed": 468000.0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q010",
+      "kind": "outcome_curve_period",
+      "expected": 609000.0,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount),0.0),2) AS total_amount_oct_2025\nFROM orders\nWHERE order_date >= DATE '2025-10-01'\n  AND order_date < DATE '2025-11-01'",
+      "observed": 609000.0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q011",
+      "kind": "outcome_curve_period",
+      "expected": 750000.0,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount), 0.0), 2) AS total_amount_nov_2025\nFROM orders\nWHERE order_date >= DATE '2025-11-01'\n  AND order_date < DATE '2025-12-01'",
+      "observed": 750000.0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q012",
+      "kind": "outcome_curve_period",
+      "expected": 905000.0,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount),0),2) AS total_amount_dec_2025\nFROM orders\nWHERE order_date >= DATE '2025-12-01' AND order_date < DATE '2026-01-01'",
+      "observed": 905000.0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q013",
+      "kind": "outcome_curve_total",
+      "expected": 6313500.0,
+      "model_sql": "SELECT ROUND(COALESCE(SUM(amount),0)::DOUBLE,2) AS total_amount\nFROM orders\nWHERE order_date >= DATE '2025-01-01' AND order_date < DATE '2026-01-01'",
+      "observed": 6313500.0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q014",
+      "kind": "plan_row_count",
+      "expected": 4824,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-01-01' AND order_date < DATE '2025-02-01'",
+      "observed": 4824,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q015",
+      "kind": "plan_row_count",
+      "expected": 4676,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-02-01' AND order_date < DATE '2025-03-01'",
+      "observed": 4676,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q016",
+      "kind": "plan_row_count",
+      "expected": 4529,
+      "model_sql": "SELECT CAST(COUNT(*) AS INTEGER) FROM orders WHERE order_date >= DATE '2025-03-01' AND order_date < DATE '2025-04-01'",
+      "observed": 4529,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q017",
+      "kind": "plan_row_count",
+      "expected": 5027,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-04-01' AND order_date < DATE '2025-05-01'",
+      "observed": 5027,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q018",
+      "kind": "plan_row_count",
+      "expected": 5525,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-05-01' AND order_date < DATE '2025-06-01'",
+      "observed": 5525,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q019",
+      "kind": "plan_row_count",
+      "expected": 6024,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-06-01' AND order_date < DATE '2025-07-01'",
+      "observed": 6024,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q020",
+      "kind": "plan_row_count",
+      "expected": 5851,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-07-01' AND order_date < DATE '2025-08-01'",
+      "observed": 5851,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q021",
+      "kind": "plan_row_count",
+      "expected": 5678,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= '2025-08-01' AND order_date < '2025-09-01'",
+      "observed": 5678,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q022",
+      "kind": "plan_row_count",
+      "expected": 5506,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-09-01' AND order_date < DATE '2025-10-01'",
+      "observed": 5506,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q023",
+      "kind": "plan_row_count",
+      "expected": 7165,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-10-01' AND order_date < DATE '2025-11-01'",
+      "observed": 7165,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q024",
+      "kind": "plan_row_count",
+      "expected": 8824,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= DATE '2025-11-01' AND order_date < DATE '2025-12-01'",
+      "observed": 8824,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q025",
+      "kind": "plan_row_count",
+      "expected": 10000,
+      "model_sql": "SELECT COUNT(*) FROM orders WHERE order_date >= '2025-12-01' AND order_date < '2026-01-01'",
+      "observed": 10000,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q026",
+      "kind": "outcome_curve_argmax",
+      "expected": "2025-12",
+      "model_sql": "SELECT to_char(min_month, 'YYYY-MM') AS month_with_max_total\nFROM (\n  SELECT DATE_TRUNC('month', order_date) AS month_start, SUM(amount) AS total_amount,\n         RANK() OVER (ORDER BY SUM(amount) DESC) AS rnk\n  FROM orders\n  GROUP BY month_start\n) t\nJOIN (\n  SELECT MIN(month_start) AS min_month\n  FROM (\n    SELECT DATE_TRUNC('month', order_date) AS month_start, SUM(amount) AS total_amount\n    FROM orders\n    GROUP BY month_start\n    HAVING SUM(amount) = (SELECT MAX(month_total) FROM (\n      SELECT SUM(amount) AS month_total FROM orders GROUP BY DATE_TRUNC('month', order_date)\n    ))\n  )\n) m ON t.month_start = m.min_month\nLIMIT 1",
+      "observed": null,
+      "exec_error": "Catalog Error: Scalar Function with name to_char does not exist!\nDid you mean \"to_hours\"?\n\nLINE 1: SELECT to_char(min_month, 'YYYY-MM') AS month_with_max_total\n               ^",
+      "correct": false,
+      "used_between": false
+    },
+    {
+      "id": "q028",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0214,
+      "model_sql": "SELECT ROUND(\n    SUM(CASE WHEN is_fraud THEN 1 ELSE 0 END)::DOUBLE /\n    NULLIF(COUNT(*)::DOUBLE, 0),\n4\n) AS fraud_fraction\nFROM orders\nWHERE order_date >= DATE '2025-02-01'\n  AND order_date < DATE '2025-03-01'",
+      "observed": 0.0214,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q029",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0227,
+      "model_sql": "SELECT ROUND(\n    (SUM(CASE WHEN is_fraud THEN 1 ELSE 0 END)::DOUBLE / NULLIF(COUNT(*),0)),\n    4\n) AS fraud_fraction\nFROM orders\nWHERE order_date >= DATE '2025-03-01' AND order_date < DATE '2025-04-01'",
+      "observed": 0.0227,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q030",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0241,
+      "model_sql": "SELECT ROUND(\n  1.0 * SUM(CASE WHEN is_fraud THEN 1 ELSE 0 END) /\n  NULLIF(COUNT(*),0)\n,4) AS fraud_fraction\nFROM orders\nWHERE order_date >= DATE '2025-04-01' AND order_date < DATE '2025-05-01'",
+      "observed": 0.0241,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q031",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0255,
+      "model_sql": "SELECT ROUND(\n    (SUM(CASE WHEN is_fraud THEN 1 ELSE 0 END)::DOUBLE / NULLIF(COUNT(*),0)),\n    4\n) AS fraud_fraction\nFROM orders\nWHERE order_date >= DATE '2025-05-01' AND order_date < DATE '2025-06-01'",
+      "observed": 0.0255,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q033",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0282,
+      "model_sql": "SELECT ROUND(1.0 * SUM(CASE WHEN is_fraud THEN 1 ELSE 0 END) / NULLIF(COUNT(*),0),4) AS fraud_fraction\nFROM orders\nWHERE order_date >= DATE '2025-07-01' AND order_date < DATE '2025-08-01'",
+      "observed": 0.0282,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q035",
+      "kind": "rate_curve_anchor",
+      "expected": 0.0309,
+      "model_sql": "SELECT ROUND(\n    CAST(SUM(CASE WHEN is_fraud THEN 1 ELSE 0 END) AS DOUBLE) /\n    NULLIF(COUNT(*), 0)\n, 4) AS fraud_fraction\nFROM orders\nWHERE order_date >= DATE '2025-09-01' AND order_date < DATE '2025-10-01'",
+      "observed": 0.0309,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q038",
+      "kind": "rate_curve_anchor",
+      "expected": 0.035,
+      "model_sql": "SELECT ROUND(\n    1.0 * SUM(CASE WHEN is_fraud THEN 1 ELSE 0 END) /\n    NULLIF(COUNT(*),0)\n,4) AS fraud_fraction\nFROM orders\nWHERE order_date >= DATE '2025-12-01' AND order_date < DATE '2026-01-01'",
+      "observed": 0.035,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q039",
+      "kind": "fk_integrity",
+      "expected": 0,
+      "model_sql": "SELECT COUNT(*) FROM orders o WHERE NOT (o.customer_id IS NULL OR EXISTS (SELECT 1 FROM customers c WHERE c.customer_id = o.customer_id))",
+      "observed": 0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    },
+    {
+      "id": "q040",
+      "kind": "fk_integrity",
+      "expected": 0,
+      "model_sql": "SELECT COUNT(*) FROM orders o WHERE NOT (o.product_id IS NULL OR EXISTS (SELECT 1 FROM products p WHERE p.product_id = o.product_id))",
+      "observed": 0,
+      "exec_error": null,
+      "correct": true,
+      "used_between": false
+    }
+  ]
+}

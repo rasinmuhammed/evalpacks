@@ -11,6 +11,7 @@ re-judged by anyone who disagrees.
 | E2 rotation invariance | `e2_seed_stability.py` | none (local) | free |
 | E3 scale and cost | `e3_scale.py` | none (local, idle machine) | free |
 | E4 adversarial audit | `e4_adversarial_audit.py` | OPENAI_API_KEY | ~$0.15 |
+| E5 open-book evaluation | `run_openbook.py` | either key | cents |
 
 Examples:
 

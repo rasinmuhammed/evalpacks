@@ -1,0 +1,42 @@
+name: Request a verified pack
+description: Ask for a custom evalpack built to your spec, usually delivered within 48 hours.
+title: "Pack request: "
+labels: ["pack-request"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      placeholder: e.g. CRM pipeline, marketplace, support tickets, general ledger
+    validations:
+      required: true
+  - type: textarea
+    id: tables
+    attributes:
+      label: Tables and key columns
+      placeholder: "accounts, opportunities(amount, close_date, is_won), invoices(amount, issued_date)"
+    validations:
+      required: true
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Declared outcomes
+      description: The numbers the data must hit exactly. Aggregate curves, rates, identities.
+      placeholder: "Monthly pipeline $1.8M Jan to $3.6M Dec; win rate 22% to 31%; every journal entry balances"
+    validations:
+      required: true
+  - type: input
+    id: scale
+    attributes:
+      label: Scale
+      placeholder: e.g. 100k fact rows, or 10M for RL training
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      placeholder: e.g. this week
+  - type: textarea
+    id: context
+    attributes:
+      label: What is it for?
+      description: Eval harness, RL environment, demo, CI seeds. Helps me pick the right question families.
